@@ -1,0 +1,48 @@
+Dependências:
+-----------------------------------------------------------------------------
+ - Express: 
+	- Para definição de roteamento/rotas;
+	- Middleware: para manipulação de requisições e respostas;
+	- Gestão de requisições e respostas: incluindo parsing de dados JSON, manipulação de parâmetros de URL e gerenciamento de cookies;
+	- Motor de templates: suporta vários motores de template, como Pug, EJS e Handlebars, permitindo que você crie páginas web dinâmicas;
+	- Criação de APIs: para criar APIs RESTful, fornece uma maneira estruturada de criar endpoints e definir a lógica de manipulação de dados;
+	- Autenticação e autorização: com o auxílio de middleware adicional, como passport, o Express pode ser usado para implementar autenticação e autorização em suas aplicações;
+	- Flexibilidade: altamente configurável e extensível, permitindo que você adicione funcionalidades conforme necessário através de middlewares e módulos externos;
+	- Conclusão: express é uma escolha popular para desenvolvimento de servidores web e APIs em Node.js devido à sua simplicidade, flexibilidade e extensa documentação. Permite que devs criem aplicações robustas e escaláveis de maneira rápida e eficiente.
+
+-----------------------------------------------------------------------------
+ - Nodemon:
+	- Ajuda a desenvolver aplicações Node.js ao reiniciar automaticamente o servidor quando arquivos no diretório do projeto são modificados. Isso melhora significativamente a eficiência do desenvolvimento, pois elimina a necessidade de reiniciar manualmente o servidor a cada mudança no código.
+	- Instalação global (ideal somente para utilização em ambiente de desenvolvimento para execução de testes da aplicação, não recomendado para uso em aplicações hospedadas/produção): npm install -g nodemon
+	- Instalação como dependência de desenvolvimento: npm install --save-dev nodemon
+	- Iniciar aplicação: nodemon app.js
+-----------------------------------------------------------------------------
+ - Consign:
+	- Organização do Código: O consign promove uma melhor organização do código ao estruturar a aplicação em diretórios lógicos, como routes, controllers, models, etc;
+	- Carregamento Automático: Ele carrega automaticamente todos os módulos dentro de um diretório específico, poupando tempo e esforço de ter que importar manualmente cada módulo em seu código principal;
+	- Manutenibilidade: Facilita a manutenção do código, pois novos módulos podem ser adicionados sem precisar modificar o código de inicialização da aplicação;
+	- Configuração Simples: É fácil de configurar e usar, e pode ser integrado rapidamente em uma aplicação existente;
+	- Instalação como dependência (--save para incluir no package/json): npm install express consign --save
+-----------------------------------------------------------------------------
+ - Body-parse:
+	-  É um middleware do Node.js que facilita o processamento de dados enviados em requisições HTTP. Ele extrai os dados do corpo das requisições (geralmente de formulários ou JSON) e os disponibiliza na propriedade req.body do objeto de requisição. Isso simplifica a manipulação de dados enviados pelo cliente;
+	- Propósito: Extrair e analisar dados do corpo das requisições HTTP;
+	- Usos Comuns: Processar dados enviados em formulários (application/x-www-form-urlencoded) e JSON (application/json);
+	- Integração: Facilita a leitura e manipulação dos dados de entrada no servidor;
+	- Instalação como dependência (--save para incluir no package/json): npm install express body-parse --save
+-----------------------------------------------------------------------------
+ - Nedb:
+	- Tipo de Banco de Dados: NoSQL, embutido, baseado em arquivos.
+	- Propósito: Fornecer uma solução simples e leve para armazenamento de dados em aplicações Node.js;
+	- Similar ao MongoDB: Facilita o uso para desenvolvedores familiarizados com MongoDB;
+	- azenamento: Pode armazenar dados em arquivos ou apenas na memória;
+	- Uso: Ideal para pequenos projetos, protótipos, e aplicações que não precisam de um banco de dados robusto e escalável;
+	- Instalação como dependência (--save para incluir no package/json): npm install express nedb --save
+-----------------------------------------------------------------------------
+ - Express-validator:
+	- Módulo do npm que fornece um conjunto de middlewares express.js para a validação de dados de requisição e sanitização. Ele é baseado na biblioteca validator.js e facilita a implementação de validações comuns e complexas em suas rotas Express;
+	- Validação de Dados: Permite validar campos de entrada como strings, números, e-mails, URLs, etc., para garantir que os dados recebidos atendam a determinados critérios;
+	- Sanitização de Dados: Oferece métodos para limpar e transformar os dados de entrada, como remover espaços em branco extras ou converter strings para maiúsculas/minúsculas;
+	- Integração com Express: Funciona como middleware, integrando-se facilmente ao fluxo de requisições e respostas do Express;
+	- Customização: Suporta a criação de validadores e sanitizadores personalizados para atender a requisitos específicos da aplicação;
+-----------------------------------------------------------------------------
